@@ -1,6 +1,8 @@
 const URL_PARAMS = new URLSearchParams(location.search);
-const THEME = "themes/" + (URL_PARAMS.get("theme") || "default") + ".css";
+const THEME_SRC = URL_PARAMS.get("theme-src") || "themes/";
+const THEME = THEME_SRC + (URL_PARAMS.get("theme") || "default") + ".css";
 const DISCORD_WIDGET_DATA = `https://discord.com/api/guilds/${URL_PARAMS.get("id")}/widget.json`;
+
 
 if (URL_PARAMS.has("id")) {
     fetch(DISCORD_WIDGET_DATA).then(async (res) => {
