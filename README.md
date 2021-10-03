@@ -18,7 +18,7 @@ Copy the below code into your website and replace `SERVER_ID` with your server I
 
 ## Themes
 
-You can change the theme of the widget by adding `&theme=` followed by the theme ID to the URL in the src attribute. The default theme is default-dark.
+You can change the theme of the widget by adding `&theme=` followed by the theme ID to the URL in the src attribute. The default theme is Default (Dark).
 
 | Theme Name       | Theme ID      | Preview                                                                |
 |------------------|---------------|------------------------------------------------------------------------|
