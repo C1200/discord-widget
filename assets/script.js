@@ -1,4 +1,4 @@
-const BASE_URL = "https://c1200.js.org/discord-invite";
+const BASE_URL = "https://c1200.js.org/discord-widget";
 const URL_PARAMS = new URLSearchParams(location.search);
 const THEME_SRC = URL_PARAMS.get("theme-src") || "themes/";
 const THEME = THEME_SRC + (URL_PARAMS.get("theme") || "default") + ".css";
