@@ -1,8 +1,8 @@
+const BASE_URL = "https://c1200.js.org/discord-invite";
 const URL_PARAMS = new URLSearchParams(location.search);
 const THEME_SRC = URL_PARAMS.get("theme-src") || "themes/";
 const THEME = THEME_SRC + (URL_PARAMS.get("theme") || "default") + ".css";
 const DISCORD_WIDGET_DATA = `https://discord.com/api/guilds/${URL_PARAMS.get("id")}/widget.json`;
-
 
 if (URL_PARAMS.has("id")) {
     fetch(DISCORD_WIDGET_DATA).then(async (res) => {
@@ -19,7 +19,7 @@ if (URL_PARAMS.has("id")) {
 
             fetch(THEME).then(res => res.text()).then((style) => {
                 $(".mount").append(`<style>${style}</style>`);
-                $(".mount .header").prepend(`<img class="discord-logo" src="${$(":root").css("--header-logo")}" alt="Discord Logo">`);
+                $(".mount .header").prepend(`<img class="discord-logo" src="${BASE_URL + $(":root").css("--header-logo")}" alt="Discord Logo">`);
             });
 
             o.members.forEach(member => {
