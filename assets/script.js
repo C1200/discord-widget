@@ -19,7 +19,9 @@ if (URL_PARAMS.has("id")) {
 
             fetch(THEME).then(res => res.text()).then((style) => {
                 $(".mount").append(`<style>${style}</style>`);
-                $(".mount .header").prepend(`<img class="discord-logo" src="${BASE_URL + $(":root").css("--header-logo")}" alt="Discord Logo">`);
+                setTimeout(() => {
+                    $(".mount .header").prepend(`<img class="discord-logo" src="${BASE_URL + $(":root").css("--header-logo")}" alt="Discord Logo">`);
+                }, 200);
             });
 
             o.members.forEach(member => {
