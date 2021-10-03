@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Widget</title>
+</head>
+<body>
+    <div class="mount">
+        <div class="header">
+            <span class="server-name" data-key="name"></span>
+        </div>
+        <div class="main">
+            <p class="online-header">Online &mdash; <span data-key="presence_count"></span></p>
+            <div class="online-members"></div>
+        </div>
+        <div class="footer">
+            <span class="powered-by">Powered by <a href="https://github.com/C1200/discord-widget">C1200's Discord Widget</a></span>
+            <a class="join" href="#join">Join Now</a>
+        </div>
+    </div>
+
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/lodash.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
