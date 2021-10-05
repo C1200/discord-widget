@@ -20,9 +20,9 @@ if (URL_PARAMS.has("id")) {
             fetch(THEME).then(res => res.text()).then((style) => {
                 $(".mount").append(`<style>${style}</style>`);
 
-                const HEADER_LOGO = $(":root").css("--header-logo");
-
                 setTimeout(() => {
+                    const HEADER_LOGO = $(":root").css("--header-logo");
+                    
                     $(".mount .header").prepend(`<img class="discord-logo" src="${
                         BASE_URL + (
                             HEADER_LOGO.startsWith(" ") ?
