@@ -9,7 +9,7 @@ if (URL_PARAMS.has("id")) {
         var o = await res.json();
 
         if (res.ok) {
-            function checkHash() { if (location.hash === "#join") location.href = o.instant_invite; }
+            function checkHash() { if (location.hash === "#join") window.open(o.instant_invite); }
             if (location.hash === "#join") location.hash = "";
             window.onhashchange = checkHash;
 
