@@ -8,7 +8,7 @@ Copy the below code into your website and replace `SERVER_ID` with your server I
 
 ```html
 <iframe
-    src="https://c1200.js.org/discord-widget?id=SERVER_ID" 
+    src="https://c1200.js.org/discord-widget/?id=SERVER_ID" 
     width="450"
     height="500"
     allowtransparency="true"
